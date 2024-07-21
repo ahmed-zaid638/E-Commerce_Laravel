@@ -9,6 +9,9 @@
 - Reqeust class contains only methods
 - when setupping form => action, method , @csrf
 - all fontend assets will placed in the public folder
+- to get srcs from public folder just type the name of the folder dirct
+- when creating model laravel will make migration for that file
+- 
 
 
 

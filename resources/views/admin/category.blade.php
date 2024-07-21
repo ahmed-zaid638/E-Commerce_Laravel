@@ -8,6 +8,7 @@
 
 <body>
     @include('admin.header')
+
     <div class="d-flex align-items-stretch">
         <!-- Sidebar Navigation-->
         @include('admin.sidebar')
@@ -15,7 +16,16 @@
         <div class="page-content">
             <div class="page-header">
                 <div class="container-fluid">
-                    @include('admin.body')
+                    <h1>Add Category</h1>
+                    <form action="{{url('add_category') }}" method="POST" class="flex mt-2 gap-3">
+                        @csrf
+                        <div>
+                            <input type="text" name="category">
+                        </div>
+                        <div>
+                            <input type="submit" class="border px-3 py-2" value="Add Category">
+                        </div>
+                    </form>
 
                 </div>
             </div>
